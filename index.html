@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>proguardrules.com - Generate your Android ProGuard file</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="css/select2-bootstrap.min.css">
 </head>
 <body>
 
@@ -19,7 +21,10 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search for...">
+                        <select class="form-control select2" style="width: 100%" multiple="multiple">
+                            <option value="dagger2">Dagger 2</option>
+                            <option value="butterknife7">Butter Knife 7</option>
+                        </select>
                         <span class="input-group-btn">
                             <button class="btn btn-default" type="button">Generate</button>
                         </span>
@@ -28,6 +33,11 @@
             </div>
         </div>
     </div>
+
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/select2.min.js"></script>
+    <script type="text/javascript" src="js/proguardrules.js"></script>
 </div>
 </body>
 </html>
