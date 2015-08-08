@@ -13,21 +13,28 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-lg-12 text-center">
-            <h1>proguardrules.com</h1>
+        <div class="col-lg-12">
+            <h1 class="text-center">proguardrules.com</h1>
 
-            <p class="lead">Generate your Android ProGuard file</p>
+            <p class="lead text-center">Generate your Android ProGuard file</p>
 
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <div class="input-group">
-                        <select class="form-control select2" style="width: 100%" multiple="multiple">
-                            <option value="dagger2">Dagger 2</option>
+                    <div class="input-group text-center">
+                        <select id="search-box" class="form-control select2" style="width: 100%" multiple="multiple">
+                            <option value="dagger1">Dagger 1</option>
                             <option value="butterknife7">Butter Knife 7</option>
                         </select>
                         <span class="input-group-btn">
-                            <button class="btn btn-default" type="button">Generate</button>
+                            <button id="generate-button" class="btn btn-default" type="button">Generate</button>
                         </span>
+                    </div>
+                    <br />
+                    <div id="rules-container" class="container-fluid well collapse">
+                        <div class="row">
+                            <code id="rules">
+                            </code>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,7 @@
+&#35; Dagger 1
+
+-keep class **$$ModuleAdapter
+-keep class **$$InjectAdapter
+-keep class **$$StaticInjection
+
+-keep class dagger.Lazy
