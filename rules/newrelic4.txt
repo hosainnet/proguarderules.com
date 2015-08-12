@@ -1,4 +1,4 @@
-&#35; New Relic
+&#35;&#35; New Relic
 
 -keep class com.newrelic.** { *; }
 -dontwarn com.newrelic.**
