@@ -1,0 +1,6 @@
+&#35; New Relic
+
+-keep class com.newrelic.** { *; }
+-dontwarn com.newrelic.**
+-keepattributes Exceptions, Signature, InnerClasses
+
